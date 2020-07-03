@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { InfoBarComponent } from './info-bar/info-bar.component';
 import { ContentComponent } from './content/content.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

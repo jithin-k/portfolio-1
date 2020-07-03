@@ -54,9 +54,18 @@
   color: #8c8c8e;
   margin: 15px 0px;
 
+  div {
+    display: flex;
+  }
+
   p {
     margin-bottom: 5px;
     margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  fa-icon{
+    color: #FFC107;
   }
 }
 
@@ -67,6 +76,11 @@
   font-weight: 600;
   margin: 15px 0px;
   color: #8c8c8e;
+  display: flex;
+
+  fa-icon {
+    padding-left: 10px;
+  }
 }
 
 .social {
