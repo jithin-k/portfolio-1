@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 html{
   height: 98%;
 }
@@ -6,5 +8,28 @@ html{
 body{
   margin: 1%;
   height: 98%;
-  background-color: #191922;
+  background-color: #191923;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+h5 {
+  color: white;
+  font-family:"Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  margin: 10px;
+
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fafafc;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
 }
