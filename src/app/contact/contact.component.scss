@@ -1,0 +1,25 @@
+.contact-container {
+  margin: 0px 30px;
+  overflow-x: hidden;
+
+  .item-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    padding: 8px 0px;
+    margin-bottom: 30px;
+  }
+
+  .item {
+    background-color: #2d2d3a;
+    padding: 45px 30px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      color: #8c8c8e;
+      padding-top: 5px;
+    }
+  }
+
+}

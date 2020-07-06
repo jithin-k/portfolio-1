@@ -7,13 +7,17 @@ import { InfoBarComponent } from './info-bar/info-bar.component';
 import { ContentComponent } from './content/content.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactComponent } from './contact/contact.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InfoBarComponent,
     ContentComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    ContactComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

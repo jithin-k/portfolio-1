@@ -2,6 +2,10 @@
   background: #1e1e28;
   height: 100%;
   display: grid;
-  grid-template-columns: 290px auto 8%;
+  grid-template-columns: 290px auto; //removed menu bar 230-150 = 80
   margin: 0px;
+}
+
+app-content {
+  overflow: auto;
 }

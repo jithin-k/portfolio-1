@@ -1,0 +1,25 @@
+.history-container {
+  margin: 0px 30px;
+  overflow-x: hidden;
+
+  .history-item-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 8px 0px;
+  }
+
+  .history-item {
+    background-color: #2d2d3a;
+  }
+
+  .time-line {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+
+    .item {
+      background-color: yellow;
+    }
+  }
+
+}
