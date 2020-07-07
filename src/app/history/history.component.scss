@@ -1,25 +1,124 @@
 .history-container {
   margin: 0px 30px;
   overflow-x: hidden;
+  position: relative;
 
   .history-item-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 8px 0px;
-  }
-
-  .history-item {
-    background-color: #2d2d3a;
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
   }
 
   .time-line {
     display: grid;
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
     grid-template-rows: auto;
-    grid-row-gap: 10px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    padding: 8px 0px;
+    position: relative;
+  }
 
-    .item {
-      background-color: yellow;
+  .time-line::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: calc(50% - 2.5px);
+    height: calc(100% - 36px);
+    width: 5px;
+    background: #191923;
+  }
+
+  .history-item {
+    position: relative;
+  }
+
+  .time-line-content-left {
+    background-color: #2d2d3a;
+    padding: 30px;
+    margin-right: 40px;
+    position: relative;
+
+  }
+
+  .time-line-content-right {
+    background-color: #2d2d3a;
+    padding: 30px;
+    margin-left: 40px;
+    position: relative;
+
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+  }
+  .left {
+    h5 {
+      margin: 0px;
+    }
+    div {
+      margin-top: 5px;
+      color: #646466;
+      font-style: italic;
+      font-size: 11px;
     }
   }
+
+  .right {
+    span{
+      color: #646466;
+      background: #20202a;
+      padding: 5px 15px;
+      border-radius: 15px;
+      font-size: 10px;
+    }
+
+  }
+
+  .time-line-content-left::after {
+    height: 10px;
+    width: 10px;
+    background-color: #2d2d3a;
+    transform: rotate(-135deg);
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -5px;
+  }
+
+  .time-line-content-right::after {
+    height: 10px;
+    width: 10px;
+    background-color: #2d2d3a;
+    transform: rotate(-135deg);
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: -5px;
+  }
+
+
+}
+.time-line-mark {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: solid 3px #FFC107;
+  background: #1e1e28;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+}
+
+
+.left-mark {
+  right: -63px;
+  top: 14px;
+}
+
+.right-mark {
+  left: -63px;
+  bottom: 14px;
 
 }

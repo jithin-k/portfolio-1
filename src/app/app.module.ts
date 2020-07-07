@@ -9,6 +9,7 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './contact/contact.component';
 import { HistoryComponent } from './history/history.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HistoryComponent } from './history/history.component';
     ContentComponent,
     MenuBarComponent,
     ContactComponent,
-    HistoryComponent
+    HistoryComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
