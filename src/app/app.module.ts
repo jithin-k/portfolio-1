@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './contact/contact.component';
 import { HistoryComponent } from './history/history.component';
 import { ProjectComponent } from './project/project.component';
+import { MyServicesComponent } from './my-services/my-services.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProjectComponent } from './project/project.component';
     MenuBarComponent,
     ContactComponent,
     HistoryComponent,
-    ProjectComponent
+    ProjectComponent,
+    MyServicesComponent
   ],
   imports: [
     BrowserModule,
