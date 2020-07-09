@@ -14,7 +14,7 @@ export class ProjectComponent implements OnInit {
   }
 
   masonryLayoutHeightSetUp() {
-    const numCols = 3;
+    const numCols = 2;
     const colHeights = Array(numCols).fill(0);
     const container = document.getElementById('masonry-with-columns');
 
