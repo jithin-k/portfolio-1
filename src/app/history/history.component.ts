@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Component, OnInit, Input } from '@angular/core';
 import { History } from 'src/app/models/history-item.model';
 
 @Component({
@@ -10,17 +8,10 @@ import { History } from 'src/app/models/history-item.model';
 })
 export class HistoryComponent implements OnInit {
 
-  private _jsonURL = 'assets/resources/work.json';
-  public history;
+  @Input() public history: History;
 
-  constructor(private http: HttpClient) {
-    this.getJSON().subscribe(data => {
-      this.history = data;
-      console.log(this.history)
-     });
-   }
-   public getJSON(): Observable<any> {
-     return this.http.get(this._jsonURL);
+  constructor() {
+
    }
  
 
