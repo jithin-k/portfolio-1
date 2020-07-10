@@ -1,63 +1,46 @@
 <div class="history-container">
-      <h4>Work History</h4>
+      <h4>{{ history.title }}</h4>
         <div class="time-line">
-          <div class="time-line-content-left">
-            <div class="time-line-mark left-mark">
-            </div>
-            <div class="header">
-              <div class="left">
-                <h5>Senior Engineer</h5>
+          <ng-container *ngFor="let item of history.items; let index = index">
+            <div>
+              <div *ngIf="index%2==0" class="time-line-content-left">
+                <div class="time-line-mark left-mark">
+                </div>
+                <div class="header">
+                  <div class="left">
+                    <h5>{{item.title}}</h5>
+                    <div>
+                      {{item.subtitle}}
+                    </div>
+                  </div>
+                  <div class="right">
+                    <span>{{item.startDate}} - {{item.endDate}}</span>
+                  </div>
+                </div>
                 <div>
-                  QBurst Technologies
+                  {{item.description}}
                 </div>
               </div>
-              <div class="right">
-                <span>january 2020 - present</span>
-              </div>
-            </div>
-            <div>
-              Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
-
-            </div>
-          </div>
-          <div class="time-line-content-right">
-            <div class="time-line-mark right-mark">
-            </div>
-            <div class="header">
-              <div class="left">
-                <h5>Product Engineer, iOS</h5>
+              <div *ngIf="index%2==1" class="time-line-content-right">
+                <div class="time-line-mark right-mark">
+                </div>
+                <div class="header">
+                  <div class="left">
+                    <h5>{{item.title}}</h5>
+                    <div>
+                      {{item.subtitle}}
+                    </div>
+                  </div>
+                  <div class="right">
+                    <span>{{item.startDate}} - {{item.endDate}}</span>
+                  </div>
+                </div>
                 <div>
-                  EventOrg
+                  {{item.description}}
                 </div>
               </div>
-              <div class="right">
-                <span>march 2018 - january 2020</span>
-              </div>
             </div>
-            <div>
-              Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
-
-            </div>
-          </div>
-          <div class="time-line-content-left">
-            <div class="time-line-mark left-mark">
-            </div>
-            <div class="header">
-              <div class="left">
-                <h5>Software Engineer</h5>
-                <div>
-                  Cabot Technology Solutions
-                </div>
-              </div>
-              <div class="right">
-                <span>july 2016 - january 2020</span>
-              </div>
-            </div>
-            <div>
-              Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
-
-            </div>
-          </div>
+          </ng-container>
       </div>
 
 </div>

@@ -1,0 +1,26 @@
+{
+  "title": "Work History",
+
+  "items": [{
+    "title": "Senior Engineer",
+    "subtitle": "QBurst Technologies",
+    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?",
+    "startDate": "january 2020",
+    "endDate": "present"
+  },
+  {
+    "title": "Senior Engineer",
+    "subtitle": "QBurst Technologies",
+    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde",
+    "startDate": "january 2020",
+    "endDate": "present"
+  },
+  {
+    "title": "Senior Engineer",
+    "subtitle": "QBurst Technologies",
+    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?",
+    "startDate": "january 2020",
+    "endDate": "present"
+  }
+  ]
+}
