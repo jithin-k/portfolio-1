@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnChanges} from '@angular/core';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { Projects, Project } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-project',
@@ -9,10 +10,15 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 export class ProjectComponent implements OnInit {
 
   chevron = faChevronRight;
-  
+  @Input() public projects: Projects;
+
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  ngOnChanges(): void {
     this.masonryLayoutHeightSetUp();
   }
 

@@ -1,210 +1,22 @@
 <div class="project-container">
-  <h4>Projects</h4>
+  <h4>{{ projects.title }}</h4>
   <div class="masonry-with-columns" id="masonry-with-columns">
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/1.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 1</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-         </span>  
-      </span>
-      
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/8.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 2</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-         </span>  
-      </span>
-      
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 3</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-  
+    <ng-container *ngFor="let project of projects.items">
+      <div>
+        <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/1.jpg" alt="">
+        <span class="description-hover">
+          <span class="description">
+            <h5>{{ project.title }}</h5>
+            <span>
+              {{ project.description }}
+            </span>
+            <span>
+              <a href="#.">Read more</a>
+            </span>
+           </span>  
         </span>
-      </span>
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/8.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 4</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 5</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 6</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-      
-
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 7</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-  
-        </span>
-      </span>
-      
-
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 8</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-      
-
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 9</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-      
-
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 10</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-      
-
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 11</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-      
-
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 12</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-      
-
-    </div>
-    <div>
-      <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/5.jpg" alt="">
-      <span class="description-hover">
-        <span class="description">
-          <h5>Project title 13</h5>
-          <span>
-            Sit amet, consectetur adipisicing elit. Quas, architecto.
-          </span>
-          <span>
-            <a href="#.">Read more</a>
-          </span>
-        </span>
-      </span>
-      
-
-    </div>
-
+      </div>
+    </ng-container>
     
   </div>
   <div class="view-all">
