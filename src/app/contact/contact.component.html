@@ -1,33 +1,15 @@
 <div class="contact-container">
-  <h4>Contact information</h4>
+  <h4>{{ contact.title }}</h4>
   <div class="item-grid">
-    <div class="item">
-      <div>
-        <h6>Country:</h6>
-        <span>India</span>
+    <ng-container *ngFor="let contactGroup of contact.items">
+      <div class="item">
+        <ng-container *ngFor="let info of contactGroup.infoItems">
+          <div>
+            <h6>{{info.infoName}}:</h6>
+            <span>{{info.infoValue}}</span>
+          </div>
+        </ng-container>
       </div>
-      <div>
-        <h6>State:</h6>
-        <span>Kerala</span>
-      </div>
-      <div>
-        <h6>City:</h6>
-        <span>Cochin</span>
-      </div>
-    </div>
-    <div class="item">
-      <div>
-        <h6>Email:</h6>
-        <span>catherinekg38@gmail.com</span>
-      </div>
-      <div>
-        <h6>Skype:</h6>
-        <span>catherinekg38</span>
-      </div>
-      <div>
-        <h6>Mobile:</h6>
-        <span>+91 9567615680</span>
-      </div>
-    </div>
+    </ng-container>
   </div>
 </div>

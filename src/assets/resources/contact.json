@@ -1,0 +1,37 @@
+{
+  "title": "Contact Information",
+
+  "items": [{
+    "infoItems": [
+      {
+        "infoName": "Country",
+        "infoValue": "India"
+      },
+      {
+        "infoName": "State",
+        "infoValue": "Kerala"
+      },
+      {
+        "infoName": "City",
+        "infoValue": "Cochin"
+      }
+    ]
+  },
+  {
+    "infoItems": [
+      {
+        "infoName": "Email",
+        "infoValue": "catherinekg38@gmail.com"
+      },
+      {
+        "infoName": "Skype",
+        "infoValue": "catherinekg38"
+      },
+      {
+        "infoName": "Mobile",
+        "infoValue": "+91 9567615680"
+      }
+    ]
+  }
+  ]
+}

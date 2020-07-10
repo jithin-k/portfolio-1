@@ -1,0 +1,19 @@
+{
+  "title": "Education",
+
+  "items": [{
+    "title": "B.Tech",
+    "subtitle": "Computer Science and Engineering",
+    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?",
+    "startDate": "2012",
+    "endDate": "2016"
+  },
+  {
+    "title": "Higher Secondary",
+    "subtitle": "Sacred Heart H.S.S",
+    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde",
+    "startDate": "2010",
+    "endDate": "2012"
+  }
+  ]
+}
