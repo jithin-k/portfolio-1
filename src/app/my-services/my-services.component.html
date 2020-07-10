@@ -1,26 +1,14 @@
 <div class="services-container">
-    <h4>Services</h4>
+    <h4>{{ myServices.title }}</h4>
     <div class="grid-container">
-        <div class="grid-item">
-            <h5>Web Development</h5>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-            <div>
-                <a href="#.">Read more</a>
+        <ng-container *ngFor="let service of myServices.items">
+            <div class="grid-item">
+                <h5>{{ service.title }}</h5>
+                <div>{{ service.description }}</div>
+                <div>
+                    <a href="#.">Read more</a>
+                </div>
             </div>
-        </div>
-        <div class="grid-item">
-            <h5>Web Development</h5>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-            <div>
-                <a href="#.">Read more</a>
-            </div>
-        </div>
-        <div class="grid-item">
-            <h5>Web Development</h5>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</div>
-            <div>
-                <a href="#.">Read more</a>
-            </div>
-        </div>
+        </ng-container>
     </div>
 </div>

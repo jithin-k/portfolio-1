@@ -9,15 +9,18 @@ import { Observable } from 'rxjs';
 })
 export class ContentComponent implements OnInit {
 
+  private _myServicesJsonURL = 'assets/resources/my-services.json';
   private _workJsonURL = 'assets/resources/work.json';
   private _educationJsonURL = 'assets/resources/education.json';
   private _contactJsonURL = 'assets/resources/contact.json';
 
+  public myServices;
   public workHistory;
   public educationHistory;
   public contact;
 
   constructor(private http: HttpClient) {
+    this.getMyServices();
     this.getWorkHistory();
     this.getEducationHistory();
     this.getContact();
@@ -41,6 +44,13 @@ export class ContentComponent implements OnInit {
     this.getJSON(this._contactJsonURL).subscribe(data => {
       this.contact = data;
       console.log(this.contact);
+     });
+   }
+
+   private getMyServices() {
+    this.getJSON(this._myServicesJsonURL).subscribe(data => {
+      this.myServices = data;
+      console.log(this.myServices);
      });
    }
 
