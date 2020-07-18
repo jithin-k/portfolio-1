@@ -16,11 +16,11 @@
 
   div {
     flex: 1 0 auto;
-    background: #EC985A;
     margin: 15px;
     width: calc((100% - 90px)/3);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     :hover + .description-hover{
       opacity:1;
       transition:opacity 0.25s linear;
@@ -29,7 +29,7 @@
 
   @for $i from 1 through 36 {
     div:nth-child(#{$i}) {
-      $h: (random(200) + 200) + px;
+      $h: (random(100) + 200) + px;
       height: $h;
       line-height: $h;
     }

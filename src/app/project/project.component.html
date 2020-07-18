@@ -3,7 +3,7 @@
   <div class="masonry-with-columns" id="masonry-with-columns">
     <ng-container *ngFor="let project of projects.items">
       <div>
-        <img src="https://elanta.app/nazar/arter-demo/img/works/thumbnail/1.jpg" alt="">
+        <img src="{{project.imageUrl}}" alt="">
         <span class="description-hover">
           <span class="description">
             <h5>{{ project.title }}</h5>
