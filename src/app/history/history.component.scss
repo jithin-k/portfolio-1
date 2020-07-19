@@ -1,3 +1,4 @@
+$line-color: var(--outer-background-color);
 $box-bg-color: var(--box-background-color);
 $theme-color: var(--theme-color);
 $light-text-color: var(--content-light-text-color);
@@ -25,7 +26,7 @@ $light-text-color: var(--content-light-text-color);
     left: calc(50% - 2.5px);
     height: calc(100% - 36px);
     width: 5px;
-    background: #191923;
+    background: $line-color;
   }
 
 
