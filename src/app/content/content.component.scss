@@ -1,7 +1,10 @@
+$background-color: var(--inner-background-color);
 $box-bg-color: var(--box-background-color);
 $content-color: var(--content-text-color);
 $theme-color: var(--theme-color);
 $section-title-color: var(--section-title-color);
+$button-text-color: var(--box-date-background-color);
+
 .content-container{
   height: 100%;
   position: relative;
@@ -57,7 +60,7 @@ $section-title-color: var(--section-title-color);
   font-size: 11px;
   padding: 0 35px;
   background: $theme-color;
-  color: #20202a;
+  color: $button-text-color;
   letter-spacing: 1.5px;
   font-weight: 600;
   border: none;

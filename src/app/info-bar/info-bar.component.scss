@@ -1,9 +1,11 @@
+$bar-bg-color: var(--bar-background-color);
+$header-footer-bg-color: var(--bar-header-footer-background-color);
 $content-color: var(--content-text-color);
 $theme-color: var(--theme-color);
 $light-text-color: var(--content-light-text-color);
 $title-content-color: var(--content-title-color);
 .info-bar-container{
-  background-color: #202029;
+  background-color: $bar-bg-color;
   height: 100%;
   position: relative;
 
@@ -12,7 +14,7 @@ $title-content-color: var(--content-title-color);
 .header {
   width: 100%;
   height: 235px;
-  background-color: #252532;
+  background-color: $header-footer-bg-color;
   padding: 30px;
   box-sizing: border-box;
   text-align: center;
@@ -90,7 +92,7 @@ $title-content-color: var(--content-title-color);
 .social {
   position: absolute;
   bottom: 0px;
-  background-color: #24242e;
+  background-color: $header-footer-bg-color;
   width: 100%;
   height: 50px;
   display: grid;

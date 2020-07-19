@@ -1,5 +1,7 @@
+$background-color: var(--inner-background-color);
+
 .app-container {
-  background: #1e1e28;
+  background: $background-color;
   height: 100%;
   display: grid;
   grid-template-columns: 290px auto; //removed menu bar 230-150 = 80
