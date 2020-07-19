@@ -1,3 +1,5 @@
+$theme-color: var(--theme-color);
+
 .project-container {
   margin: 0px 15px;
   overflow: hidden;
@@ -72,7 +74,7 @@
 
 
   a {
-    color: #FFC107;
+    color: $theme-color;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 10px;
@@ -107,7 +109,7 @@ img:hover {
 .view-all {
   float: right;
   padding: 15px;
-  color: #FFC107;
+  color: $theme-color;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 10px;

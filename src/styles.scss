@@ -8,7 +8,7 @@ html{
 body{
   margin: 1%;
   height: 98%;
-  color: #8c8c8e;
+  color: var(--content-text-color);
   background-color: #191923;
   font-size: 12px;
   font-family: "Poppins", sans-serif;
@@ -18,11 +18,11 @@ body{
 
 h1 {
   margin: 0px;
-  color: #fafafc;
+  color: var(--content-title-color);
 }
 
 h4 {
-  color: #fafafc;
+  color: var(--content-title-color);
   font-size: 17px;
   font-weight: 600;
   // margin-bottom: 30px;
@@ -30,7 +30,7 @@ h4 {
 }
 
 h5 {
-  color: white;
+  color: var(--content-title-color);
   font-family:"Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -43,7 +43,18 @@ h5 {
 h6 {
   font-size: 12px;
   font-weight: 400;
-  color: #fafafc;
+  color: var(--content-title-color);
   margin: 0px;
   font-family: "Poppins", sans-serif;
+}
+
+:root  {
+
+  --theme-color: violet; //#FFC107;
+  --box-background-color: rgb(206, 253, 247); //#2d2d3a;
+
+  //Text colors
+  --content-title-color: rgb(230, 61, 61); // #fafafc;
+  --content-text-color: rgb(167, 211, 247); //#8c8c8e;
+  --content-light-text-color: red;//#646466;
 }
