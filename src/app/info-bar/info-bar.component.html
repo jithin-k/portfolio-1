@@ -3,11 +3,11 @@
   <!-- Header with profile -->
   <div class="header">
     <img src="../../assets/profile.jpg" alt="">
-    <h5>Catherine George</h5>
+    <h5>{{info.name}}</h5>
     <div class="sub-text">
-      Mobile Application Developer
+      {{ info.title }}
       <br>
-      iOS | Freelancer
+      {{ info.subtitle }}
     </div>
   </div>
 
@@ -15,36 +15,22 @@
   <div class="content">
 
     <div class="basic-info">
-      <div class="items">
-        <h6>Residence:</h6><span>Canada</span>
-      </div>
-      <div class="items">
-        <h6>City:</h6><span>Kochi</span>
-      </div>
-      <div class="items">
-        <h6>Age:</h6><span>25</span>
-      </div>
+      <ng-container *ngFor="let info of info.contact">
+        <div class="items">
+          <h6>{{ info.key }}:</h6><span>{{ info.value }}</span>
+        </div>
+      </ng-container>
     </div>
 
     <div class="divider"></div>
 
     <div class="skill-list">
-      <div>
-        <fa-icon [icon]="faCheck"></fa-icon>
-        <p>Xcode, Swift, Objective C</p>
-      </div>
-      <div>
-        <fa-icon [icon]="faCheck"></fa-icon>
-        <p>Rest API's, Google's Firebase</p>
-      </div>
-      <div>
-        <fa-icon [icon]="faCheck"></fa-icon>
-        <p>Sketch, App store, CI/CD</p>
-      </div>
-      <div >
-        <fa-icon [icon]="faCheck"></fa-icon>
-        <p>GIT Knowlegde</p>
-      </div>
+      <ng-container *ngFor="let skill of info.skills">
+        <div>
+          <fa-icon [icon]="faCheck"></fa-icon>
+          <p>{{skill}}</p>
+        </div>
+      </ng-container>
     </div>
 
     <div class="divider"></div>

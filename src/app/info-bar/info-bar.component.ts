@@ -5,6 +5,8 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 import { faHackerrank } from "@fortawesome/free-brands-svg-icons";
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-info-bar',
@@ -19,8 +21,23 @@ export class InfoBarComponent implements OnInit {
   faGithub = faGithub;
   faStackOverflow = faStackOverflow;
   faHackerrank = faHackerrank;
+  private _infoJsonURL = 'assets/resources/info.json';
 
-  constructor() { }
+  public info;
+  constructor(private http: HttpClient) {
+    this.getInfo()
+  }
+
+  private getInfo() {
+    this.getJSON(this._infoJsonURL).subscribe(data => {
+      this.info = data;
+      console.log(this.info);
+     });
+   }
+
+   private getJSON(urlString: string): Observable<any> {
+     return this.http.get(urlString);
+   }
 
   ngOnInit(): void {
   }

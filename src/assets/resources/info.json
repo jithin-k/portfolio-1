@@ -1,0 +1,29 @@
+{
+  "name": "Anniee",
+  "title": "Python Dev",
+  "subtitle":"iOS | Freelancer",
+  "profile-url":"https://github.com",
+  "cv-url": "https://github.com",
+  "linkedin-url": "https://github.com",
+  "github-url": "https://github.com",
+  "hackerrank-url":"https://github.com",
+  "stackoverflow": "https://github.com",
+  "skills": [
+    "GIT Knowlegde",
+    "GIT Knowlegde"
+  ],
+  "contact": [
+    {
+      "key": "Residence",
+      "value": "Canada"
+    },
+    {
+      "key": "City",
+      "value": "Cochin"
+    },
+    {
+      "key": "Age",
+      "value": "44"
+    }
+  ]
+}
