@@ -1,0 +1,82 @@
+.connect-container {
+    height: 500px;
+    background-color: burlywood;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.payment-container {
+    padding: 20px;
+}
+
+.payment-method-container {
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+
+}
+
+.charges-list-container {
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 15px;
+    padding: 15px 0px;
+}
+
+.charge-item {
+    
+        display: flex;
+        justify-content: space-between;
+
+}
+
+img {
+    width:  80px;
+    height: 80px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    height: 40px;
+    font-size: 11px;
+    padding: 0 35px;
+    background: rgb(14, 92, 209);
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    width: 75%;
+ 
+
+    span {
+    background: url("/assets/icon.png") no-repeat;
+    padding: 0px 20px;
+    width: 10px;
+    height: 40px;
+    }
+    // background-position: left;
+    // padding-right: 16px;
+    
+}
+
+hr {
+    border-top: 1px dashed green;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
