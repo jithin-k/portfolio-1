@@ -43,6 +43,7 @@ $input-text-color: var(--content-title-color);
         letter-spacing: 1.5px;
         font-weight: 600;
         border: none;
+        outline: none;
       }
 
     input {
@@ -64,7 +65,7 @@ $input-text-color: var(--content-title-color);
         color: $input-text-color;
         margin: 0px;
         font-family:"Poppins", sans-serif;
-
+        resize: none;
     }
 
 
