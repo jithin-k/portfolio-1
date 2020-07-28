@@ -1,26 +1,26 @@
 <div class="connect-container">
     <h4>Get in touch</h4>
-    <div class="grid">
+    <form class="grid">
         <div class="item">
-            <div class="icon">
-                <fa-icon [icon]="user"></fa-icon>
+            <div class="icon" id="name">
+                <fa-icon [icon]="user" id="user"></fa-icon>
             </div>
-            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Name" (change)="changeNameBG()" required>
         </div>
         <div class="item">
-            <div class="icon">
-                <fa-icon [icon]="email"></fa-icon>
+            <div class="icon" id="email">
+                <fa-icon [icon]="email" id="emailIcon"></fa-icon>
             </div>
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" (change)="changeEmailBG()" required>
         </div>
         <div class="item message">
-            <div class="icon">
-                <fa-icon [icon]="message"></fa-icon>
+            <div class="icon" id="message">
+                <fa-icon [icon]="message" id="messageIcon"></fa-icon>
             </div>
-            <textarea name="text" id="" placeholder="Message"></textarea>
+            <textarea name="text" id="" placeholder="Message" (change)="changeMessageBG()" required></textarea>
         </div>
         <div class="item">
-            <button class="button">SEND MESSAGE</button>
+            <button class="button" (click)="onSubmit()">SEND MESSAGE</button>
         </div>
-    </div>
+    </form>
 </div>
