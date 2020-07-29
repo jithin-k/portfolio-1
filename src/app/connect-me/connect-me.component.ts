@@ -22,22 +22,5 @@ export class ConnectMeComponent implements OnInit {
    onSubmit() {
     console.log("submitted")
   }
-
-  changeNameBG() {
-    document.getElementById("name").style.backgroundColor = "#FFC107";
-    document.getElementById("user").style.color = "black";
-  }
-
-  changeEmailBG() {
-    document.getElementById("email").style.backgroundColor = "#FFC107";
-    document.getElementById("emailIcon").style.color = "black";
-
-  }
-
-  changeMessageBG() {
-    document.getElementById("message").style.backgroundColor = "#FFC107";
-    document.getElementById("messageIcon").style.color = "black";
-
-  }
 }
 

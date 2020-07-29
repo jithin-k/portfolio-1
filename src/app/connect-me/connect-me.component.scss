@@ -19,15 +19,17 @@ $input-text-color: var(--content-title-color);
     .item {
         height: 50px;
         display: flex;
-        
+        position: relative;
     }
 
-    .icon {
+    label {
         width: 50px;
         background-color: $icon-bg-color;
         text-align: center;
         padding-top: 15px;
-
+        position: absolute;
+        left: 0px;
+        height: calc(100% - 15px);
     }
 
     .message {
@@ -50,10 +52,19 @@ $input-text-color: var(--content-title-color);
         width: 100%;
         background-color:#252532;
         border: none;
-        padding: 0px 15px;
+        padding: 0px 65px;
         color: $input-text-color;
         margin: 0px;
         font-family:"Poppins", sans-serif;
+        transition: all 0.3s ease;
+
+        &:focus, &:active {
+            outline: none;
+            +label {
+                color: black;
+                background-color: $theme-color;
+          }
+        }
 
     }
 
@@ -62,14 +73,23 @@ $input-text-color: var(--content-title-color);
         background-color:#252532;
         border: none;
         padding: 15px;
+        padding-left: 65px;
         color: $input-text-color;
         margin: 0px;
         font-family:"Poppins", sans-serif;
         resize: none;
+        transition: all 0.3s ease;
+
+        &:focus, &:active {
+            outline: none;
+            +label {
+                color: black;
+                background-color: $theme-color;
+          }
+        }
     }
 
 
-    textarea:focus, input:focus{
-        outline: none;
-    }
+
+
 }
