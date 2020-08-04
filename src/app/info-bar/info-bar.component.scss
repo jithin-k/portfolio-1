@@ -87,6 +87,10 @@ $title-content-color: var(--content-title-color);
   fa-icon {
     padding-left: 10px;
   }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .social {
