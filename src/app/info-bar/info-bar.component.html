@@ -2,7 +2,7 @@
 
   <!-- Header with profile -->
   <div class="header">
-    <img src="../../assets/profile.jpg" alt="">
+    <img src="{{info.profileUrl}}" alt="">
     <h5>{{info.name}}</h5>
     <div class="sub-text">
       {{ info.title }}
@@ -36,7 +36,7 @@
     <div class="divider"></div>
 
     <div class="download-cv">
-      <a download="resume.pdf" target="_blank" href="/assets/Jithin-Resume.pdf">
+      <a download="resume.pdf" target="_blank" href="{{info.resumeUrl}}">
         Download CV
       <fa-icon [icon]="faDownload"></fa-icon>
       </a>
@@ -46,10 +46,10 @@
 
   <!-- Footer with social links -->
   <div class="social">
-    <a href="#linkedin"><fa-icon [icon]="linkedin"></fa-icon></a>
-    <a href="#github"><fa-icon [icon]="faGithub"></fa-icon></a>
-    <a href="#stackOverflow"><fa-icon [icon]="faStackOverflow"></fa-icon></a>
-    <a href="#hackerrank"><fa-icon [icon]="faHackerrank"></fa-icon></a>
+    <a href="{{info.linkedinUrl}}"><fa-icon [icon]="linkedin"></fa-icon></a>
+    <a href="{{info.githubUrl}}"><fa-icon [icon]="faGithub"></fa-icon></a>
+    <a href="{{info.stackoverflow}}"><fa-icon [icon]="faStackOverflow"></fa-icon></a>
+    <a href="{{info.hackerrankUrl}}"><fa-icon [icon]="faHackerrank"></fa-icon></a>
   </div>
 
 </div>

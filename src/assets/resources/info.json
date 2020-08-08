@@ -1,21 +1,28 @@
 {
-  "name": "Anniee",
-  "title": "Python Dev",
-  "subtitle":"iOS | Freelancer",
-  "profile-url":"https://github.com",
-  "cv-url": "https://github.com",
-  "linkedin-url": "https://github.com",
-  "github-url": "https://github.com",
-  "hackerrank-url":"https://github.com",
-  "stackoverflow": "https://github.com",
+  "name": "Catherine George",
+  "title": "Senior Engineer, QBurst",
+  "subtitle":"iOS | Angular",
+  "profileUrl":"https://killerattitudestatus.in/wp-content/uploads/2019/12/gud-night-images-e1581532611580.jpg",
+  "resumeUrl":"/assets/Jithin-Resume.pdf",
+  "linkedinUrl": "https://www.linkedin.com/in/catherine-george-076776a9",
+  "githubUrl": "https://github.com/CatherinKG",
+  "hackerrankUrl":"https://www.hackerrank.com/catherine_george",
+  "stackoverflow": "https://stackoverflow.com/users/7114979/catherine",
   "skills": [
-    "GIT Knowlegde",
-    "GIT Knowlegde"
+    "Swift, iOS SDK",
+    "HTML",
+    "CSS, SCSS",
+    "Angular",
+    "Amazon Web Services",
+    "Google Firebase",
+    "REST API Integration",
+    "GIT",
+    "Agile Development"
   ],
   "contact": [
     {
       "key": "Residence",
-      "value": "Canada"
+      "value": "India"
     },
     {
       "key": "City",
@@ -23,7 +30,7 @@
     },
     {
       "key": "Age",
-      "value": "44"
+      "value": "25"
     }
   ]
 }
