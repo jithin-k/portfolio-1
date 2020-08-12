@@ -1,6 +1,7 @@
 export class MyServices {
     title: String;
     items: [ServiceItem];
+    expertise: [Expertise];
 }
 
 export class ServiceItem {
@@ -8,3 +9,7 @@ export class ServiceItem {
     description: String;
 }
 
+export class Expertise {
+    title: String;
+    icon: String;
+}

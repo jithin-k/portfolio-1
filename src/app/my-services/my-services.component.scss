@@ -4,10 +4,10 @@ $theme-color: var(--theme-color);
 .services-container {
     margin: 0px 30px;
     margin-bottom: 15px;
-    background-color:transparent;
-    
+    background-color: transparent;
+
     .grid-container {
-        background-color:transparent;
+        background-color: transparent;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
@@ -29,7 +29,7 @@ $theme-color: var(--theme-color);
         margin-top: 15px;
     }
 
-    a{
+    a {
         color: $theme-color;
         text-transform: uppercase;
         text-decoration: none;
@@ -38,19 +38,19 @@ $theme-color: var(--theme-color);
         font-weight: 600;
     }
 
-    .expertise{
+    .expertise {
         margin: 30px 0px;
         display: flex;
         justify-content: space-between;
-      
-        .item{
-          align-items: center;
-          font-size: 30px;
-      
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
         }
-        fa-icon{
+        fa-icon {
             color: $theme-color;
         }
-      }
-      
-}  
+    }
+}
