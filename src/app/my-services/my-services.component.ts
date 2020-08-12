@@ -30,4 +30,32 @@ export class MyServicesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getIcon(name) {
+
+    switch (name) {
+      case "google":
+        return this.google
+
+      case "aws":
+        return this.aws
+
+      case "twitter":
+        return this.twitter
+
+      case "ads":
+        return this.ads
+
+      case "bluetooth":
+        return this.bluetooth
+
+      case "cart":
+        return this.cart
+
+      case "health":
+        return this.health
+
+      default: return this.health
+    }
+  };
+
 }

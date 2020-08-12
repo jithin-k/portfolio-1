@@ -1,5 +1,15 @@
 <div class="services-container">
     <h4>{{ myServices.title }}</h4>
+
+    <div class="expertise">
+        <ng-container *ngFor="let item of myServices.expertise">
+            <div class="item">
+                <fa-icon [icon]=getIcon(item.icon)></fa-icon>
+                <h6>{{item.title}}</h6>
+            </div>
+        </ng-container>
+    </div>
+    
     <div class="grid-container">
         <ng-container *ngFor="let service of myServices.items">
             <div class="grid-item">
@@ -11,16 +21,8 @@
             </div>
         </ng-container>
     </div>
-    <!-- <div class="expertise">
-        <ng-container *ngFor="let item of myServices.expertise">
-            <div class="item">
-                <fa-icon [icon]= {{ item.icon }}></fa-icon>
-                <h6>{{item.title}}</h6>
-            </div>
-        </ng-container>
-    </div> -->
 
-    <div class="expertise">
+    <!-- <div class="expertise">
         <div class="item">
             <fa-icon [icon]="google"></fa-icon>
             <h6>Google Firebase</h6>
@@ -49,5 +51,5 @@
             <fa-icon [icon]="health"></fa-icon>
             <h6>Health Kit</h6>
         </div>
-      </div>
+      </div> -->
 </div>
