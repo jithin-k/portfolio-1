@@ -2,24 +2,32 @@
   "title": "My Services",
 
   "items": [{
-    "title": "Web Development",
-    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?"
+    "title": "iOS App Development",
+    "description": "Looking for iOS application that would be suitable for your business needs? Let's bring your ideas to reality."
   },
   {
     "title": "Web Development",
-    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde"
+    "description": "Having a website make it easy for people to find you, discover what you do and build credibility with clients. It Gives lasting value! Let's create one for you."
   },
   {
-    "title": "Web Development",
-    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde"
+    "title": "White-label App Development",
+    "description": "Building white label apps for your clients is a great way to provide more value to them while also increasing your own profits."
   },
   {
-    "title": "Web Development",
-    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde"
+    "title": "CI/CD",
+    "description": "Time is money, Let's Save it!  Integrate CI/CD to your development process and make your development cycle faster and efficient."
   },
   {
-    "title": "Web Development",
-    "description": "Consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde"
+    "title": "Swift Frameworks",
+    "description": "Split your app's feature into reusable Swift frameworks, improve your code cleanness and team's efficiency."
+  },
+  {
+    "title": "App Store Deployment",
+    "description": "Never feel lost again!  Let's ensure all the Appstore guidelines are checked and publish your app to the App store."
+  },
+  {
+    "title": "Localization",
+    "description": "Localizing your app helps make it relevant to a variety of cultures and languages, and provides an opportunity to grow your business."
   }
   ]
 }
