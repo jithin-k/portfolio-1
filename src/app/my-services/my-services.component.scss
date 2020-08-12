@@ -37,4 +37,20 @@ $theme-color: var(--theme-color);
         letter-spacing: 1.5px;
         font-weight: 600;
     }
+
+    .count-content {
+        margin: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+      
+        .item{
+          align-items: center;
+          font-size: 30px;
+      
+        }
+        fa-icon{
+            color: $theme-color;
+        }
+      }
+      
 }  
