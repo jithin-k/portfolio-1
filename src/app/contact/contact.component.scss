@@ -27,3 +27,22 @@ $content-color: var(--content-text-color);
   }
 
 }
+
+@media (max-width: 768px) {
+  .contact-container{
+      margin: 0px 15px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    .item-grid {
+      display: grid;
+      grid-template-columns: auto;
+      grid-row-gap: 30px;
+      padding: 8px 0px;
+      margin-bottom: 0px;
+    }
+  }
+}
