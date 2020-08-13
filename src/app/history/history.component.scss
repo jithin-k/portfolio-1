@@ -123,3 +123,62 @@ $date-box-bg-color: var(--box-date-background-color);
   bottom: 14px;
 
 }
+
+
+@media (max-width: 768px) {
+  .history-container{
+      margin: 0px 15px;
+
+      .time-line {
+        display: grid;
+        grid-template-columns: calc(100% - 15px);
+        grid-template-rows: auto;
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+        padding: 8px 0px;
+        position: relative;
+      }
+
+      .time-line::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: calc(100% - 10px);
+        height: calc(100% - 36px);
+        width: 5px;
+        background: $line-color;
+      }
+
+      .time-line-content-left, .time-line-content-right {
+        background-color: $box-bg-color;
+        padding: 30px;
+        margin-right: 40px;
+        margin-left: 0px;
+        position: relative;
+    
+      }
+
+      .time-line-content-right::after {
+        height: 10px;
+        width: 10px;
+        background-color: $box-bg-color;
+        transform: rotate(-135deg);
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: unset;
+        right: -5px;
+      }
+
+    
+  }
+
+  .left-mark, .right-mark  {
+    right: -56px;
+    top: 14px;
+    bottom: 0px;
+    left: unset;
+
+  }
+
+}
