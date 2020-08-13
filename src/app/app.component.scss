@@ -11,3 +11,9 @@ $background-color: var(--inner-background-color);
 app-content {
   overflow: auto;
 }
+
+@media (max-width:768px){
+  .app-container {
+    grid-template-columns: auto;
+  }
+}
