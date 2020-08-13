@@ -117,3 +117,56 @@ img:hover {
   letter-spacing: 1.5px;
   font-weight: 600;
 }
+
+
+@media (max-width: 768px) {
+  .project-container {
+    margin: 0px;
+  }
+
+  .masonry-with-columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1000px;
+  
+    div {
+      flex: 1 0 auto;
+      margin: 15px;
+      width: calc((100% - 60px)/2);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+      :hover + .description-hover{
+        opacity:1;
+        transition:opacity 0.25s linear;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    margin: 0px;
+  }
+
+  .masonry-with-columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1000px;
+  
+    div {
+      flex: 1 0 auto;
+      margin: 15px;
+      width: calc(100% - 30px);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+      :hover + .description-hover{
+        opacity:1;
+        transition:opacity 0.25s linear;
+      }
+    }
+  }
+}
