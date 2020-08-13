@@ -73,13 +73,6 @@ $theme-color: var(--theme-color);
         div {
             margin-top: 0px;
         }
-
-        .expertise {
-            margin: 30px 0px;
-            display: flex;
-            justify-content: space-around;
-
-        }
     }  
 }
 
@@ -105,8 +98,13 @@ $theme-color: var(--theme-color);
 
         .expertise {
             margin: 30px 0px;
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: calc((100% - 60px)/2) calc((100% - 60px)/2);
+            row-gap: 30px;
+
+        .item {
+            text-align: center;
+        }
         }
     }  
 }
