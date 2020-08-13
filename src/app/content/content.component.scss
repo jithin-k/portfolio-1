@@ -98,3 +98,9 @@ footer {
   right:0px;
   bottom: 0px;
 }
+
+@media (max-width: 768px) {
+  footer{
+      margin: 0px 15px;
+  }
+}
