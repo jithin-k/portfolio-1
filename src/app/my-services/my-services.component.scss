@@ -54,3 +54,38 @@ $theme-color: var(--theme-color);
         }
     }
 }
+
+@media (max-width: 768px) {
+    .services-container {
+        margin: 0px 15px;
+
+        .grid-container {
+            background-color: transparent;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+            padding: 0px;
+        }
+    }  
+}
+
+
+@media (max-width: 480px) {
+    .services-container {
+        margin: 0px 15px;
+
+        .grid-container {
+            background-color: transparent;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+            padding: 0px;
+        }
+    }  
+}
+
+
