@@ -58,6 +58,7 @@ $theme-color: var(--theme-color);
 @media (max-width: 768px) {
     .services-container {
         margin: 0px 15px;
+        overflow: hidden;
 
         .grid-container {
             background-color: transparent;
@@ -68,6 +69,17 @@ $theme-color: var(--theme-color);
             grid-column-gap: 30px;
             padding: 0px;
         }
+
+        div {
+            margin-top: 0px;
+        }
+
+        .expertise {
+            margin: 30px 0px;
+            display: flex;
+            justify-content: space-around;
+
+        }
     }  
 }
 
@@ -75,6 +87,7 @@ $theme-color: var(--theme-color);
 @media (max-width: 480px) {
     .services-container {
         margin: 0px 15px;
+        overflow: hidden;
 
         .grid-container {
             background-color: transparent;
@@ -84,6 +97,16 @@ $theme-color: var(--theme-color);
             grid-row-gap: 30px;
             grid-column-gap: 30px;
             padding: 0px;
+        }
+
+        div {
+            margin-top: 0px;
+        }
+
+        .expertise {
+            margin: 30px 0px;
+            display: flex;
+            justify-content: space-around;
         }
     }  
 }
