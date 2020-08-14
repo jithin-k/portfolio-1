@@ -111,3 +111,10 @@ $title-content-color: var(--content-title-color);
     color: $title-content-color;
   }
 }
+
+
+@media (max-width:768px){
+  .info-bar-container {
+    display: none;
+  }
+}
