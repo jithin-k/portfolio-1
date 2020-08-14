@@ -1,4 +1,27 @@
 $background-color: var(--inner-background-color);
+$top-bar-color: var(--bar-background-color);
+$text-color: var(----content-text-color);
+
+.top-bar {
+  height: 70px;
+  width: 100%;
+  background-color: $top-bar-color;
+  box-shadow:  #0b0b0f;
+  display: none;
+
+  a {
+    pointer-events: all;
+    font-size: 14px;
+    padding: 30px;
+    color: $text-color;
+
+  }
+
+  fa-icon {
+    font-weight: bold;
+  }
+
+}
 
 .app-container {
   background: $background-color;
@@ -13,6 +36,11 @@ app-content {
 }
 
 @media (max-width:768px){
+
+  .top-bar {
+    display: flex;
+  }
+
   .app-container {
     grid-template-columns: 0px auto;
   }
