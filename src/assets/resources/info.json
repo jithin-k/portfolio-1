@@ -1,13 +1,13 @@
 {
-  "name": "Catherine George",
+  "name": "Jithin K",
   "title": "Senior Engineer",
-  "subtitle":"iOS | Angular",
-  "profileUrl":"https://killerattitudestatus.in/wp-content/uploads/2019/12/gud-night-images-e1581532611580.jpg",
+  "subtitle":"iOS",
+  "profileUrl":"https://firebasestorage.googleapis.com/v0/b/portfolio-e26cb.appspot.com/o/dev-profile.png?alt=media&token=72fd3c41-23bb-43b3-bbaf-05ac831f72c7",
   "resumeUrl":"/assets/Jithin-Resume.pdf",
-  "linkedinUrl": "https://www.linkedin.com/in/catherine-george-076776a9",
-  "githubUrl": "https://github.com/CatherinKG",
-  "hackerrankUrl":"https://www.hackerrank.com/catherine_george",
-  "stackoverflow": "https://stackoverflow.com/users/7114979/catherine",
+  "linkedinUrl": "www.linkedin.com/in/k-jithin",
+  "githubUrl": "https://github.com/jithin-k",
+  "hackerrankUrl":"https://www.hackerrank.com/k_jithin12",
+  "stackoverflow": "https://stackoverflow.com/users/5443937/jithin",
   "skills": [
     "Swift, iOS",
     "HTML",
@@ -24,11 +24,11 @@
     },
     {
       "key": "City",
-      "value": "Cochin"
+      "value": "Kannur"
     },
     {
       "key": "Age",
-      "value": "25"
+      "value": "26"
     }
   ]
 }
